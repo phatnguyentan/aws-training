@@ -129,3 +129,17 @@ Explanation:
 AWS CodeCommit is a hosted Git solution managed by AWS. AWS CodeCommit will work natively with Git clients and enable IAM integration. AWS CodeRepo is not a service in AWS. AWS CodeDeploy is an AWS service used to deploy code to EC2 instances. AWS CodeBuild is used to create build artifacts. </br>
 Reference(s): https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html
 </div></br>
+
+### Designing Secure Access to AWS Resources
+![security](/aws/images/Live-AWS-Security-Panel-Slidedeck-1.png)
+> What AWS service provides temporary credentials when an IAM role is used?
+- [ ] Cognito
+- [ ] IAM
+- [ ] Security Token Service
+- [ ] Secrets Manager
+<div style="background-color:#dff0d8">
+Explanation:
+Explanation:
+Security Token Service provides temporary credentials for roles.</br>
+Reference(s): https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html
+</div></br>
