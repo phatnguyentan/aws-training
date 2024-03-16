@@ -64,25 +64,24 @@ There are six categories to help you establish a cloud foundation.
 ![AWS service](/aws/images/AWS-services.png)
 
 ## ❔Questions
+### Understanding the Foundations of AWS Architecture
 > An organization has developed a popular social media enterprise. The application allows users to upload images and comments to share with other users. The organization must make sure that the uploaded images don’t contain any inappropriate content. The company does not have a lot of expertise and time for development of the safety mechanisms required. Which solution would meet the requirements of the social media application?
 - [ ] Use Amazon SageMaker to detect inappropriate content.
 - [ ] Use Amazon Comprehend to detect inappropriate content.
 - [ ] Use AWS Fargate to deploy a custom machine learning model that will detect inappropriate content.
 - [ ] Use Amazon Rekognition to detect inappropriate content using DetectModerationLabels operation.
 <div style="background-color:#dff0d8">
-You answered this question correctly.
 Explanation:
-You can use Amazon Rekognition and DetectModerationLabels operation to determine if an image contains inappropriate or offensive content.
-Reference(s): 🔗 https://docs.aws.amazon.com/rekognition/latest/dg/procedure-moderate-images.html
+You can use Amazon Rekognition and DetectModerationLabels operation to determine if an image contains inappropriate or offensive content.</br>
+Reference(s): https://docs.aws.amazon.com/rekognition/latest/dg/procedure-moderate-images.html
 </div></br>
 
 > Your database is under increased load more than 50% of the time. To handle the higher loads more effectively, you’ve decided to resize your database instance. You’ve checked and confirmed that your licensing can handle the compute changes, and now you must determine when the changes will be applied. When could you choose to apply the changes? Choose two answers.
 
 <div style="background-color:#dff0d8">
-You answered this question correctly.
 Explanation:
-Database instance changes can be applied immediately or during the system maintenance window specified.
-Reference(s): 🔗 https://aws.amazon.com/blogs/database/scaling-your-amazon-rds-instance-vertically-and-horizontally/
+Database instance changes can be applied immediately or during the system maintenance window specified.</br>
+Reference(s): https://aws.amazon.com/blogs/database/scaling-your-amazon-rds-instance-vertically-and-horizontally/
 </div><br>
 
 > What are the six pillars of the AWS Well-Architected Framework?
@@ -92,8 +91,41 @@ Reference(s): 🔗 https://aws.amazon.com/blogs/database/scaling-your-amazon-rds
 - [ ] Operational excellence, security, reliability, performance efficiency, cost optimization, sustainability.
 
 <div style="background-color:#dff0d8">
-You answered this question correctly.
 Explanation:
-The six pillars of the Well-Architected Framework consist of operational excellence, security, reliability, performance efficiency, sustainability, and cost optimization.
-Reference(s): 🔗 https://aws.amazon.com/blogs/apn/the-6-pillars-of-the-aws-well-architected-framework/
+The six pillars of the Well-Architected Framework consist of operational excellence, security, reliability, performance efficiency, sustainability, and cost optimization.</br>
+Reference(s): https://aws.amazon.com/blogs/apn/the-6-pillars-of-the-aws-well-architected-framework/
 </div>
+
+### The AWS Well-Architected Framework
+> You need help in protecting your EC2 instance from DDoS attacks. What solution will provide for custom EC2 DDoS protection?
+- [ ] AWS WAF
+- [ ] AWS Shield Standard
+- [ ] AWS Shield Advanced
+- [ ] Amazon GuardDuty
+<div style="background-color:#dff0d8">
+Explanation:
+AWS Shield Advanced provides custom EC2 DDoS protection utilizing AWS technical professionals. AWS Shield Standard provides the DOS protection but cannot be customized for an individual customer. Amazon GuardDuty is designed to apply machine learning to a variety of network logs; it does not provide DDoS protections. AWS WAF by itself is incorrect as each customer manages the setup and monitoring of a standard WAF deployment.</br>
+Reference(s): https://docs.aws.amazon.com/waf/latest/developerguide/waf-rules.html
+</div></br>
+
+> You are using an AWS managed service with a defined SLA. The service suddenly fails and is not available for several hours. After discussions with AWS, they agree that the service affected your operations. What are you entitled to because the service failed?
+- [ ] You are not entitled to anything because AWS services fail from time to time.
+- [ ] You are entitled to operation credits.
+- [ ] You are entitled to a service credit.
+- [ ] You are entitled to a cash refund.
+<div style="background-color:#dff0d8">
+Explanation:
+When failures occur at AWS, typically you will have to prove that the failure affected your operation. If you can prove that the failure affected your operation, you will receive a service credit for the month that you are operating in. Sometimes failures are severe enough that Amazon will automatically generate credits, but this is rare.</br>
+Reference(s): https://aws.amazon.com/compute/sla/
+</div></br>
+
+> What is the name of the AWS service that developers can use that is a managed Git service?
+- [ ] AWS CodeRepo
+- [ ] AWS CodeCommit
+- [ ] AWS CodeDeploy
+- [ ] AWS CodeBuild
+<div style="background-color:#dff0d8">
+Explanation:
+AWS CodeCommit is a hosted Git solution managed by AWS. AWS CodeCommit will work natively with Git clients and enable IAM integration. AWS CodeRepo is not a service in AWS. AWS CodeDeploy is an AWS service used to deploy code to EC2 instances. AWS CodeBuild is used to create build artifacts. </br>
+Reference(s): https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html
+</div></br>
