@@ -17,4 +17,8 @@ Chapter 14 - Designing Cost-Effective Database Solutions
 Chapter 15 - Designing Cost-Effective Network Architectures
 ```
 # Chapter 01
+
+![AWS service](/aws/images/cloud-foundations-capabilities-full-list.d858b919fb2c4dcb3b27628ba91a1896b1b3e020.png)
+
 ![AWS service](/aws/images/AWS-services.png)
+
