@@ -17,7 +17,7 @@ Chapter 14 - Designing Cost-Effective Database Solutions
 Chapter 15 - Designing Cost-Effective Network Architectures
 ```
 # Chapter 01
-[Establishing your cloud foundation on AWS](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/capabilities.html)
+:link: [Establishing your cloud foundation on AWS](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/capabilities.html)
 
 ![AWS services](/aws/images/cloud-foundations-capabilities-full-list.d858b919fb2c4dcb3b27628ba91a1896b1b3e020.png)
 
@@ -32,7 +32,7 @@ There are six categories to help you establish a cloud foundation.
 ```
 
 ## Governance, Risk Management, and Compliance
-> Governance, Risk Management, and Compliance (GRC) helps organizations set the foundation for meeting security and compliance requirements and define the overall policies your cloud environment should adhere to. The capabilities within this area help you define what needs to happen, defines your risk appetite, and informs alignment of internal policies.
+> ***Governance, Risk Management, and Compliance*** (GRC) helps organizations set the foundation for meeting security and compliance requirements and define the overall policies your cloud environment should adhere to. The capabilities within this area help you define what needs to happen, defines your risk appetite, and informs alignment of internal policies.
 
 ### Tagging
 > ***Tagging*** enables you to **group sets of resources** by **assigning metadata** to cloud resources for a variety of purposes. These purposes include access control (such as ABAC), cost reporting :money_with_wings:, and automation :oncoming_automobile: (such as patching for select tagged instances). Tagging can also be used to create new resource constructs for visibility or control (such as grouping together resources that make up a microservice, application, or workload). Tagging is fundamental to providing enterprise-level visibility and control. :eyes:
@@ -63,3 +63,24 @@ There are six categories to help you establish a cloud foundation.
 
 ![AWS service](/aws/images/AWS-services.png)
 
+## 🧠 Questions
+> An organization has developed a popular social media enterprise. The application allows users to upload images and comments to share with other users. The organization must make sure that the uploaded images don’t contain any inappropriate content. The company does not have a lot of expertise and time for development of the safety mechanisms required. Which solution would meet the requirements of the social media application?
+
+- [ ] Use Amazon SageMaker to detect inappropriate content.
+- [ ] Use Amazon Comprehend to detect inappropriate content.
+- [ ] Use AWS Fargate to deploy a custom machine learning model that will detect inappropriate content.
+- [ ] Use Amazon Rekognition to detect inappropriate content using DetectModerationLabels operation.
+```
+You answered this question correctly.
+Explanation:
+You can use Amazon Rekognition and DetectModerationLabels operation to determine if an image contains inappropriate or offensive content.
+Reference(s): https://docs.aws.amazon.com/rekognition/latest/dg/procedure-moderate-images.html
+```
+> Your database is under increased load more than 50% of the time. To handle the higher loads more effectively, you’ve decided to resize your database instance. You’ve checked and confirmed that your licensing can handle the compute changes, and now you must determine when the changes will be applied. When could you choose to apply the changes? Choose two answers.
+
+```
+You answered this question correctly.
+Explanation:
+Database instance changes can be applied immediately or during the system maintenance window specified.
+Reference(s): https://aws.amazon.com/blogs/database/scaling-your-amazon-rds-instance-vertically-and-horizontally/
+```
