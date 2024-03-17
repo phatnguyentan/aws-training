@@ -139,7 +139,6 @@ Reference(s): https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.ht
 - [ ] Secrets Manager
 <div style="background-color:#dff0d8">
 Explanation:
-Explanation:
 Security Token Service provides temporary credentials for roles.</br>
 Reference(s): https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html
 </div></br>
