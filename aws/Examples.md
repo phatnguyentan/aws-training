@@ -9,4 +9,5 @@
 - Using an IAM role to grant permissions to applications running on Amazon EC2 instances
 🔗 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html
 
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html
+- Amazon EBS encryption
+🔗 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html
