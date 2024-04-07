@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "5d31e9cab699e2eb",
+        "id": "4a5d8756e4ca385d",
         "type": "tabs",
         "children": [
           {
-            "id": "8888da7285ff933f",
+            "id": "a6ee883e13ac0009",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "terraform/README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -61,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "aws/README.md",
+                "file": "terraform/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "aws/README.md",
+                "file": "terraform/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "aws/README.md"
+                "file": "terraform/README.md"
               }
             }
           }
@@ -143,9 +146,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1e30225916d12b4e",
+  "active": "a6ee883e13ac0009",
   "lastOpenFiles": [
-    "aws/Examples.md",
-    "aws/README.md"
+    "terraform/iam_account/terraform.tfstate.backup",
+    "terraform/iam_account/terraform.tfstate",
+    "terraform/modules/iam_account/variables.tf",
+    "terraform/modules/iam_account/versions.tf",
+    "terraform/modules/iam_account/output.tf",
+    "terraform/modules/iam_account/main.tf",
+    "terraform/modules/iam_account",
+    "terraform/modules",
+    "terraform/iam_account/versions.tf",
+    "terraform/iam_account/output.tf",
+    "terraform/iam_account/main.tf",
+    "terraform/iam_account/Untitled.md",
+    "terraform/README.md",
+    "aws/README.md",
+    "README.md",
+    "aws/Examples.md"
   ]
 }
