@@ -87,5 +87,12 @@ graph TD
   CloudTrail -->|Logs| Redshift
   CloudTrail -->|Logs| Athena
   CloudTrail -->|Logs| QuickSight
-
 ```
+
+Explanation
+Data Ingestion: Data is ingested in real-time using Amazon Kinesis Data Streams and stored in Amazon S3 (Raw Data).
+Data Processing: AWS Lambda processes data in real-time, while Amazon EMR and AWS Glue handle batch processing and ETL operations.
+Data Storage: Processed data is stored in Amazon S3 (Processed Data) and Amazon Redshift for scalable storage and fast querying.
+Data Analysis: Amazon Athena queries the processed data in S3, and Amazon QuickSight visualizes the data stored in Redshift.
+Security and Access Control: IAM roles and policies manage access to all services, while security groups and network ACLs ensure secure access to resources.
+Monitoring and Logging: Amazon CloudWatch monitors the performance and health of all services, and AWS CloudTrail logs user activity and API usage.

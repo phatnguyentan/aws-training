@@ -129,7 +129,7 @@ resource "aws_emr_cluster" "emr_cluster" {
   ec2_attributes {
     instance_profile = aws_iam_instance_profile.emr_instance_profile.arn
     subnet_id        = aws_subnet.private.id
-  }
+  } 
   master_instance_group {
     instance_type = "m5.xlarge"
   }
