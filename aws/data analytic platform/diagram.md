@@ -42,51 +42,26 @@ graph TD
   S3_Processed -->|Stores Data| Redshift
   Athena -->|Queries Data| S3_Processed
   QuickSight -->|Visualizes Data| Redshift
-  IAM_Roles -->|Manages Access| Kinesis
-  IAM_Roles -->|Manages Access| Lambda
-  IAM_Roles -->|Manages Access| EMR
-  IAM_Roles -->|Manages Access| Glue
-  IAM_Roles -->|Manages Access| S3_Raw
-  IAM_Roles -->|Manages Access| S3_Processed
-  IAM_Roles -->|Manages Access| Redshift
-  IAM_Roles -->|Manages Access| Athena
-  IAM_Roles -->|Manages Access| QuickSight
-  Security_Groups -->|Secures| Kinesis
-  Security_Groups -->|Secures| Lambda
-  Security_Groups -->|Secures| EMR
-  Security_Groups -->|Secures| Glue
-  Security_Groups -->|Secures| S3_Raw
-  Security_Groups -->|Secures| S3_Processed
-  Security_Groups -->|Secures| Redshift
-  Security_Groups -->|Secures| Athena
-  Security_Groups -->|Secures| QuickSight
-  NACLs -->|Secures| Kinesis
-  NACLs -->|Secures| Lambda
-  NACLs -->|Secures| EMR
-  NACLs -->|Secures| Glue
-  NACLs -->|Secures| S3_Raw
-  NACLs -->|Secures| S3_Processed
-  NACLs -->|Secures| Redshift
-  NACLs -->|Secures| Athena
-  NACLs -->|Secures| QuickSight
-  CloudWatch -->|Monitors| Kinesis
-  CloudWatch -->|Monitors| Lambda
-  CloudWatch -->|Monitors| EMR
-  CloudWatch -->|Monitors| Glue
-  CloudWatch -->|Monitors| S3_Raw
-  CloudWatch -->|Monitors| S3_Processed
-  CloudWatch -->|Monitors| Redshift
-  CloudWatch -->|Monitors| Athena
-  CloudWatch -->|Monitors| QuickSight
-  CloudTrail -->|Logs| Kinesis
-  CloudTrail -->|Logs| Lambda
-  CloudTrail -->|Logs| EMR
-  CloudTrail -->|Logs| Glue
-  CloudTrail -->|Logs| S3_Raw
-  CloudTrail -->|Logs| S3_Processed
-  CloudTrail -->|Logs| Redshift
-  CloudTrail -->|Logs| Athena
-  CloudTrail -->|Logs| QuickSight
+  IAM_Roles -->|Manages Access| Data_Ingestion
+  IAM_Roles -->|Manages Access| Data_Processing
+  IAM_Roles -->|Manages Access| Data_Storage
+  IAM_Roles -->|Manages Access| Data_Analysis
+  Security_Groups -->|Secures| Data_Ingestion
+  Security_Groups -->|Secures| Data_Processing
+  Security_Groups -->|Secures| Data_Storage
+  Security_Groups -->|Secures| Data_Analysis
+  NACLs -->|Secures| Data_Ingestion
+  NACLs -->|Secures| Data_Processing
+  NACLs -->|Secures| Data_Storage
+  NACLs -->|Secures| Data_Analysis
+  CloudWatch -->|Monitors| Data_Ingestion
+  CloudWatch -->|Monitors| Data_Processing
+  CloudWatch -->|Monitors| Data_Storage
+  CloudWatch -->|Monitors| Data_Analysis
+  CloudTrail -->|Logs| Data_Ingestion
+  CloudTrail -->|Logs| Data_Processing
+  CloudTrail -->|Logs| Data_Storage
+  CloudTrail -->|Logs| Data_Analysis
 ```
 
 Explanation
