@@ -121,6 +121,8 @@ resource "aws_s3_bucket" "processed_data" {
 }
 
 # EMR Cluster for Batch Processing
+# Amazon EMR is used for big data processing and analysis. This configuration sets up a basic EMR cluster with Hadoop and Spark, 
+# suitable for running large-scale data processing tasks
 resource "aws_emr_cluster" "emr_cluster" {
   name          = "emr-cluster"
   release_label = "emr-5.30.0"
