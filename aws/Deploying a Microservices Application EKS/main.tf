@@ -8,8 +8,8 @@ resource "aws_vpc" "main" {
 }
 
 resource "aws_subnet" "private" {
-  count = 2
-  vpc_id = aws_vpc.main.id
+  count      = 2
+  vpc_id     = aws_vpc.main.id
   cidr_block = cidrsubnet(aws_vpc.main.cidr_block, 8, count.index)
 }
 
@@ -26,7 +26,7 @@ resource "aws_eks_cluster" "main" {
 resource "aws_eks_node_group" "node_group" {
   cluster_name    = aws_eks_cluster.main.name
   node_group_name = "main-node-group"
-  node_role       = aws_iam_role.eks_node_role.arn
+  node_role_arn   = aws_iam_role.eks_node_role.arn
   subnet_ids      = aws_subnet.private[*].id
 
   scaling_config {
@@ -92,13 +92,12 @@ resource "aws_ecr_repository" "app_repo" {
 
 # RDS Instance
 resource "aws_db_instance" "app_db" {
-  identifier        = "app-db"
-  engine            = "postgres"
-  instance_class    = "db.t3.micro"
-  allocated_storage = 20
-  name              = "appdb"
-  username          = "admin"
-  password          = "password"
+  identifier             = "app-db"
+  engine                 = "postgres"
+  instance_class         = "db.t3.micro"
+  allocated_storage      = 20
+  username               = "admin"
+  password               = "password"
   vpc_security_group_ids = [aws_security_group.db_sg.id]
   db_subnet_group_name   = aws_db_subnet_group.main.name
 }
@@ -129,7 +128,7 @@ resource "aws_secretsmanager_secret" "db_credentials" {
 }
 
 resource "aws_secretsmanager_secret_version" "db_credentials_version" {
-  secret_id     = aws_secretsmanager_secret.db_credentials.id
+  secret_id = aws_secretsmanager_secret.db_credentials.id
   secret_string = jsonencode({
     username = "admin"
     password = "password"
