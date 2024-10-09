@@ -1,5 +1,3 @@
-Sure! Here’s a complex scenario involving AWS CloudFront:
-
 ### Scenario: E-commerce Platform with Global Reach
 
 **Overview:**

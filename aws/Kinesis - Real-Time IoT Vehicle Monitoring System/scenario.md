@@ -1,5 +1,3 @@
-Here's a scenario that illustrates how various Amazon Kinesis services can work together in a real-time data streaming application:
-
 ### Scenario: Real-Time IoT Vehicle Monitoring System
 
 **Objective**: To monitor the health and performance of a fleet of delivery vehicles in real time, enabling quick decision-making and predictive maintenance.
