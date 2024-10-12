@@ -1,3 +1,4 @@
+```mermaid
 graph TD;
     A[IoT Sensors] -->|Telemetry Data| B[Kinesis Data Streams]
     B -->|Stream Processing| C[Consumer Application]
@@ -11,3 +12,4 @@ graph TD;
     I -->|Real-Time Monitoring| J[Video Dashboard]
     
     C -->|Send Alerts| K[Fleet Manager]
+```
