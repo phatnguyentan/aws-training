@@ -1,5 +1,3 @@
-Sure! Here’s a scenario involving AWS WAF (Web Application Firewall) that highlights its use in protecting a web application.
-
 ### Scenario: Protecting an E-commerce Website
 
 **Context:**
