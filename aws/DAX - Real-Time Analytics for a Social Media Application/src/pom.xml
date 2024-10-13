@@ -1,0 +1,12 @@
+<dependencies>
+    <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-dynamodb</artifactId>
+        <version>1.12.300</version> <!-- Check for the latest version -->
+    </dependency>
+    <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>amazon-dax-client</artifactId>
+        <version>1.1.0</version> <!-- Check for the latest version -->
+    </dependency>
+</dependencies>
