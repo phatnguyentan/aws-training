@@ -1,3 +1,9 @@
+EC2 placement group
+AWS Neptune
+SCP
+EC2 user data
+EMR
+
 AWS Inspector
 EBS
 EFS
