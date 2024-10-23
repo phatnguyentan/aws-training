@@ -1,6 +1,4 @@
-
-
-
+Security group
 
 EC2 placement group
 AWS Neptune
