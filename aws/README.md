@@ -1,4 +1,8 @@
+Refined zone
+Cloud HSM
 Security group
+AWS Glue
+EFS types
 
 EC2 placement group
 AWS Neptune
