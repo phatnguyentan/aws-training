@@ -1,3 +1,6 @@
+Route 53 failover
+Storage Gateway
+
 Refined zone
 Cloud HSM
 Security group
