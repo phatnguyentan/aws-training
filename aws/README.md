@@ -1,3 +1,18 @@
+Service Control Policy
+Permission boundary
+NepTune
+RDS example
+EFS IA
+EC2 placement group
+EC2 Script
+Resource asset manager
+S3 bucket policy user level and account 
+S3 IAM permission
+S3 ACL
+Launch template
+Public VFI
+Share VPC resource across account
+
 Route 53 failover
 Storage Gateway
 
