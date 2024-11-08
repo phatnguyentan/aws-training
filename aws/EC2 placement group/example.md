@@ -14,11 +14,11 @@ Amazon EC2 Placement Groups are a way to control the placement of instances in a
 
 ### Summary Table
 
-| Placement Group Type | Description                                              | Use Cases                                      |
-|----------------------|----------------------------------------------------------|------------------------------------------------|
-| Cluster               | Low latency, high throughput within a single AZ         | HPC, big data analytics                         |
-| Spread                | Distributes instances across multiple hardware           | High availability, fault tolerance              |
-| Partition             | Divided into partitions, with instances on distinct hardware | Distributed workloads like HDFS, Cassandra     |
+| Placement Group Type | Description                                                  | Use Cases                                  |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------ |
+| Cluster              | Low latency, high throughput within a single AZ              | HPC, big data analytics                    |
+| Spread               | Distributes instances across multiple hardware               | High availability, fault tolerance         |
+| Partition            | Divided into partitions, with instances on distinct hardware | Distributed workloads like HDFS, Cassandra |
 
 ### Conclusion
 Choosing the right placement group type depends on your specific application requirements, including factors like latency, throughput, and fault tolerance. Each type serves a different purpose and is optimized for different workloads.
