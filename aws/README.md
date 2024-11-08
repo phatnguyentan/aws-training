@@ -1,7 +1,6 @@
 Service Control Policy
 Permission boundary
 NepTune
-RDS example
 EFS IA
 EC2 placement group
 EC2 Script
